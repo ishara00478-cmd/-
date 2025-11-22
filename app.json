@@ -1,0 +1,205 @@
+{
+  "name": "⧉ 𝐏𝐄𝐒𝐇𝐎 ⧉",
+  "description": "PESHO — Advanced Multi-Feature WhatsApp Bot",
+  "logo": "https://freeimage.host/i/f2NGoZB",
+  "keywords": ["PESHO-BOT", "WHATSAPP-BOT", "BAILEYS", "PESHO"],
+  "success_url": "/",
+
+  "stack": "container",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Your PESHO session ID (keep it safe)",
+      "required": true,
+      "value": ""
+    },
+
+    "STICKER_NAME": {
+      "description": "Sticker pack name.",
+      "required": false,
+      "value": "PESHO-BOT"
+    },
+
+    "PREFIX": {
+      "description": "Bot prefix. Example: '.' ",
+      "required": false,
+      "value": "."
+    },
+
+    "MODE": {
+      "description": "public | private | group | inbox.",
+      "required": false,
+      "value": "public"
+    },
+
+    "ANTI_DELETE": {
+      "description": "Show deleted messages.",
+      "required": false,
+      "value": "true"
+    },
+
+    "ALWAYS_ONLINE": {
+      "description": "Make bot always online.",
+      "required": false,
+      "value": "false"
+    },
+
+    "AUTO_REPLY": {
+      "description": "Enable auto reply.",
+      "required": false,
+      "value": "false"
+    },
+
+    "AUTO_STICKER": {
+      "description": "Enable auto sticker.",
+      "required": false,
+      "value": "false"
+    },
+
+    "AUTO_STATUS_SEEN": {
+      "description": "Enable auto status seen.",
+      "required": true,
+      "value": "true"
+    },
+
+    "AUTO_STATUS_REACT": {
+      "description": "Enable auto reaction on status.",
+      "required": true,
+      "value": "true"
+    },
+
+    "AUTO_STATUS_REPLY": {
+      "description": "Auto reply to viewed status.",
+      "required": true,
+      "value": "false"
+    },
+
+    "AUTO_STATUS_MSG": {
+      "description": "Custom message when replying to status.",
+      "required": true,
+      "value": "*SEEN YOUR STATUS BY ⧉ 𝐏𝐄𝐒𝐇𝐎 ⧉*"
+    },
+
+    "OWNER_NAME": {
+      "description": "Bot Owner Name.",
+      "required": false,
+      "value": "๏֟𝐀ᴍɪήᴇ & 𝟓꯭𝐲ͯ𝐚꯭𝐥"
+    },
+
+    "OWNER_NUMBER": {
+      "description": "Owner WhatsApp number.",
+      "required": false,
+      "value": "923439850348"
+    },
+
+    "BOT_NAME": {
+      "description": "Bot Name.",
+      "required": false,
+      "value": "⧉ 𝐏𝐄𝐒𝐇𝐎 ⧉"
+    },
+
+    "ANTI_LINK": {
+      "description": "Auto delete group links.",
+      "required": true,
+      "value": "true"
+    },
+
+    "ANTI_LINK_KICK": {
+      "description": "Kick users sending group links.",
+      "required": true,
+      "value": "false"
+    },
+
+    "ANTI_BAD": {
+      "description": "Delete bad words.",
+      "required": false,
+      "value": "false"
+    },
+
+    "MENTION_REPLY": {
+      "description": "Reply when bot is mentioned.",
+      "required": false,
+      "value": "false"
+    },
+
+    "MENU_IMAGE_URL": {
+      "description": "Menu image or mention image.",
+      "required": false,
+      "value": "https://freeimage.host/i/f2NGoZB"
+    },
+
+    "DESCRIPTION": {
+      "description": "Caption for menus.",
+      "required": false,
+      "value": "PESHO — Advanced Multi-Feature WhatsApp Bot"
+    },
+
+    "DELETE_LINKS": {
+      "description": "Delete links without kicking users.",
+      "required": false,
+      "value": "false"
+    },
+
+    "AUTO_RECORDING": {
+      "description": "Auto recording effect.",
+      "required": false,
+      "value": "false"
+    },
+
+    "AUTO_TYPING": {
+      "description": "Auto typing indicator.",
+      "required": false,
+      "value": "false"
+    },
+
+    "AUTO_REACT": {
+      "description": "React to every message.",
+      "required": false,
+      "value": "false"
+    },
+
+    "CUSTOM_REACT": {
+      "description": "Enable custom reaction emojis.",
+      "required": false,
+      "value": "false"
+    },
+
+    "CUSTOM_REACT_EMOJIS": {
+      "description": "Custom reaction emojis.",
+      "required": false,
+      "value": "💝,💖,💗,❤️,💛,💚,💙,💜,🖤"
+    },
+
+    "ANTI_DEL_PATH": {
+      "description": "Resend deleted messages: inbox/same.",
+      "required": false,
+      "value": "inbox"
+    },
+
+    "ADMIN_EVENTS": {
+      "description": "Notifications of admin changes.",
+      "required": false,
+      "value": "false"
+    },
+
+    "WELCOME": {
+      "description": "Enable welcome/goodbye messages.",
+      "required": false,
+      "value": "false"
+    },
+
+    "READ_MESSAGE": {
+      "description": "Auto read all messages.",
+      "required": false,
+      "value": "false"
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+
+  "stack": "heroku-24"
+}
